@@ -25,8 +25,11 @@
    <meta property="og:image" content="https://genkasaneiwa.github.io/ar-tshirt/img/ogp/ogp.png">
    <meta property="og:site_name" content="踊るスリッパ">
    <meta property="og:description" content="1st mini album「タイムスリッパー」好評発売中">
-
    <meta name="twitter:card" content="summary_large_image">
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&amp;family=Noto+Sans+JP:wght@400;500&amp;display=swap" rel="stylesheet">
 </head>
 <body>
    <a-scene mindar-face embedded color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
@@ -38,5 +41,49 @@
          <a-gltf-model rotation="0 0 0" position="0 -.8 0" scale="5 8 7" src="#tv"></a-gltf-model>
       </a-entity>
    </a-scene>
+   <a href="https://linkco.re/Cm11dvQr?lang=ja" class="banner" target="_blank">
+      <img src="./assets/img/jacket.png" alt="踊るスリッパ" class="banner__img">
+      <div class="banner__text">
+         <h1 class="banner__lead">1st mini album<br>「タイムスリッパー」</h1>
+         <p class="banner__description">詳細はこちら</p>
+      </div>
+   </a>
+   <style>
+      .banner {
+         position: fixed;
+         bottom: 5px;
+         right: 5px;
+         background: #333;
+         padding: 1px 10px;
+         border-radius: 10px;
+         display: flex;
+         align-items: center;
+         text-decoration:none;
+      }
+
+      .banner__img {
+         width: auto;
+         height: 50px;
+       
+         flex-shrink: 0;
+         display: block;
+         margin: 0 10px 0 0;
+      }
+
+      .banner__text {
+         font-family: "Noto Sans JP";
+      }
+
+      .banner__lead {
+         font-size: 10px;
+         color: #fff;
+      }
+
+      .banner__description {
+         font-size: 10px;
+         color: #fff;
+         display: block;
+      }
+   </style>
 </body>
 </html>
